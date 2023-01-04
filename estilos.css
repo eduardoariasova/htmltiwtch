@@ -1,0 +1,43 @@
+
+/* CLASES: .nombreclase. Se puede añadir a varios elementos html */
+/* IDs: #nombreId solamente se añade a 1 elemento html */
+
+
+/* PREDETERMINADO */
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-size: 18px;
+}
+
+
+
+.miprimeraClase{
+    width: 700px;
+    padding: 100px 50px 100px 50px;
+    background-color: blueviolet;
+}
+
+#miprimerId{
+    background-color: black;
+}
+
+
+/* Cambios en dispositivos */
+/* Antes de 990px de ancho, ejecute: */
+/* DISPOSITIVOS */
+@media only screen and (max-width: 990px){
+    .miprimeraClase{
+        background-color: red !important;
+        width: 100% !important;
+    }
+}
+/* Después de 1050 de ancho, ejecute: */
+@media only screen and (min-width: 1050px){
+    .miprimeraClase{
+        background-color: yellow !important;
+        width: 100% !important;
+    }
+}
+
